@@ -59,7 +59,20 @@ public class ExerciseTester {
         System.out.println(karlsLanguages.firstLanguage());
         System.out.println(karlsLanguages.count());
 
+        System.out.println(SqueakyClean.clean("a h aa   "));
+        System.out.println(SqueakyClean.clean3("a-ba-c"));
 
+        ElonsToyCar car = ElonsToyCar.buy();
+        System.out.println(car.distanceDisplay());
+        car.drive();
+        System.out.println(car.distanceDisplay());
+        System.out.println(car.batteryDisplay());
+        car.drive();
+        System.out.println(car.distanceDisplay());
+        System.out.println(car.batteryDisplay());
+
+        System.out.println(Blackjack.twoCardsBlackjack(Cards.ACE,Cards.ACE));
+        Blackjack.Game();
 
 
     }
