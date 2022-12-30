@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ExerciseTester {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Lasagna lasagna = new Lasagna();
 
@@ -72,9 +72,17 @@ public class ExerciseTester {
         System.out.println(car.batteryDisplay());
 
         System.out.println(Blackjack.twoCardsBlackjack(Cards.ACE,Cards.ACE));
-        Blackjack.Game();
+        //Blackjack.Game();
 
+        System.out.println(Hamming.hammingDistance("GAGCCTACTAACGGGAT", "CATCGTAATGACGGCCT"));
 
+        SecretHandShake secretHandShake = new SecretHandShake();
+
+        secretHandShake.decode(9);
+        DifferenceOfSquares differenceOfSquares = new DifferenceOfSquares();
+        differenceOfSquares.diff(10);
+        Triangle triangle = new Triangle();
+        triangle.determineTriangle(3,4,5);
     }
 
 }

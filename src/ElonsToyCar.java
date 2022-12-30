@@ -24,7 +24,7 @@ public class ElonsToyCar {
     public void drive(){
 
         if(this.battery==0){
-            System.out.println("Batter empty!");
+            System.out.println("Battery empty!");
         }else{
             this.battery -=1;
             this.distance +=20;
