@@ -1,9 +1,11 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Blackjack {
     private static Scanner scanner = new Scanner(System.in);
 
+    private static Cards[] cards = new Cards[5];
     public static int parseCard(Cards card) {
         switch (card) {
 
@@ -89,12 +91,25 @@ public class Blackjack {
 
     public static void Game(){
         boolean score = false;
+        int nextCard = 2;
         while(!score){
-            score = twoCardsBlackjack(takeCard(), takeCard());
+            cards[0]=takeCard();
+            cards[1]=takeCard();
+            score = twoCardsBlackjack(cards[0],cards[1]);
             System.out.println(score);
+            for (Cards card:
+                 cards) {
+                if(card==null){
+
+                }else{
+                System.out.println(card);
+            }
+            }
             String s = scanner.nextLine();
             switch (s){
                 case "N":{
+                    cards[nextCard]=takeCard();
+                    nextCard++;
                     //next card
                 }
                 case "P":{
@@ -102,6 +117,9 @@ public class Blackjack {
                 }
                 case "S":{
                     //stop the game
+                    break;
+                }
+                default:{
                     break;
                 }
 
