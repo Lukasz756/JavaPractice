@@ -83,6 +83,8 @@ public class ExerciseTester {
         differenceOfSquares.diff(10);
         Triangle triangle = new Triangle();
         triangle.determineTriangle(3,4,5);
+        RotationalCipher rotationalCipher = new RotationalCipher();
+        System.out.println(rotationalCipher.rotate("The quick brown fox jumps over the lazy dog", 13));
     }
 
 }
