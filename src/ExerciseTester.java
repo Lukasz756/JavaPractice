@@ -85,6 +85,10 @@ public class ExerciseTester {
         triangle.determineTriangle(3,4,5);
         RotationalCipher rotationalCipher = new RotationalCipher();
         System.out.println(rotationalCipher.rotate("The quick brown fox jumps over the lazy dog", 13));
+        WordCount wordCount = new WordCount();
+        wordCount.counting("In the ArrayList chapter, you learned that Arrays store items as an ordered collection," +
+                " and you have to access them with an index number (int type)." +
+                " A HashMap however, store items in key/value pairs, and you can access them by an index of another type (e.g. a String).");
     }
 
 }
