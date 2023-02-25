@@ -1,3 +1,5 @@
+import SaddlePoint.SaddlePoint;
+
 import java.util.Arrays;
 
 public class ExerciseTester {
@@ -71,7 +73,7 @@ public class ExerciseTester {
         System.out.println(car.distanceDisplay());
         System.out.println(car.batteryDisplay());
 
-        System.out.println(Blackjack.twoCardsBlackjack(Cards.ACE,Cards.ACE));
+        System.out.println(Blackjack.twoCardsBlackjack(Cards.ACE, Cards.ACE));
         //Blackjack.Game();
 
         System.out.println(Hamming.hammingDistance("GAGCCTACTAACGGGAT", "CATCGTAATGACGGCCT"));
@@ -82,13 +84,16 @@ public class ExerciseTester {
         DifferenceOfSquares differenceOfSquares = new DifferenceOfSquares();
         differenceOfSquares.diff(10);
         Triangle triangle = new Triangle();
-        triangle.determineTriangle(3,4,5);
+        triangle.determineTriangle(3, 4, 5);
         RotationalCipher rotationalCipher = new RotationalCipher();
         System.out.println(rotationalCipher.rotate("The quick brown fox jumps over the lazy dog", 13));
         WordCount wordCount = new WordCount();
         wordCount.counting("In the ArrayList chapter, you learned that Arrays store items as an ordered collection," +
                 " and you have to access them with an index number (int type)." +
                 " A HashMap however, store items in key/value pairs, and you can access them by an index of another type (e.g. a String).");
+        SaddlePoint saddlePoint = new SaddlePoint();
+        int[][] matrixToSolve = {{1,2,5},{1,6,0}};
+    saddlePoint.matrixSolver(matrixToSolve);
     }
 
 }
