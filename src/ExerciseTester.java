@@ -94,6 +94,10 @@ public class ExerciseTester {
         SaddlePoint saddlePoint = new SaddlePoint();
         int[][] matrixToSolve = {{1,2,5},{1,6,0}};
     saddlePoint.matrixSolver(matrixToSolve);
+    RobotName robotName = new RobotName();
+        System.out.println(robotName.getRobotNames(10));
+
+
     }
 
 }
