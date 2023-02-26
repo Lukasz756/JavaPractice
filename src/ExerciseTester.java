@@ -1,3 +1,4 @@
+import Codility.Test;
 import SaddlePoint.SaddlePoint;
 
 import java.util.Arrays;
@@ -96,6 +97,11 @@ public class ExerciseTester {
     saddlePoint.matrixSolver(matrixToSolve);
     RobotName robotName = new RobotName();
         System.out.println(robotName.getRobotNames(10));
+
+        Test test = new Test();
+
+        System.out.println(test.solution2(285, 20));
+        System.out.println(test.Solution3("GSDFG"));
 
 
     }

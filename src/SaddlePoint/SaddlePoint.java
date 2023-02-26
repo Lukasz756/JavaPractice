@@ -25,6 +25,7 @@ public class SaddlePoint {
             for(j = 0;j<matrix[i].length;j++){
                 if(matrix[i][j]>rows.get(i)-matrix[i][j]){
                     System.out.println("Saddle point: " +i + "x"+j);
+
                 }else {
 
                 }
