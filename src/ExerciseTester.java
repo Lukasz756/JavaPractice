@@ -103,6 +103,8 @@ public class ExerciseTester {
         System.out.println(test.solution2(285, 20));
         System.out.println(test.Solution3("GSDFG"));
 
+        Foo foo = new Foo();
+        foo.doFoo();
 
     }
 
