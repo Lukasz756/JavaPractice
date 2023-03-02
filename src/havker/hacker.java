@@ -31,7 +31,7 @@ public class hacker {
                 numberOfGreater++;
             }
             counter++;
-List<Integer> list = new ArrayList<>()''
+List<Integer> list = new ArrayList<>();
         }
 
         return numberOfGreater;
