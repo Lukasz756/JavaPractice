@@ -41,8 +41,40 @@ public class TreeBuilding {
 
         }
         //todo sort it all
+
         for(int[] id:ids){
             System.out.println(id[0]+" "+ id[1]);
+
+//            for(int idd: id){
+//                System.out.println(idd);
+//            }
+        }
+
+        for(int i =0;i<ids.length-1;i++){
+            int[] tempids = null;
+            if(ids[i][0]>ids[i+1][0]){
+                tempids = ids[i+1];
+                ids[i+1] = ids[i];
+                ids[i]=tempids;
+                i=0;
+            }
+            if(ids[i][0]==ids[i+1][0]){
+                if(ids[i][1]>ids[i+1][1]){
+                    tempids = ids[i+1];
+                    ids[i+1] = ids[i];
+                    ids[i]=tempids;
+                    i=0;
+                }else{
+
+                }
+            }
+
+        }
+
+        System.out.println();
+        for(int[] id:ids){
+            System.out.println(id[0]+" "+ id[1]);
+
 //            for(int idd: id){
 //                System.out.println(idd);
 //            }
