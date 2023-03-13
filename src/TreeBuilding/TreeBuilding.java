@@ -2,6 +2,7 @@ package TreeBuilding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.regex.MatchResult;
 import java.util.regex.Pattern;
@@ -40,7 +41,8 @@ public class TreeBuilding {
 
 
         }
-        //todo sort it all
+
+
 
         for(int[] id:ids){
             System.out.println(id[0]+" "+ id[1]);
